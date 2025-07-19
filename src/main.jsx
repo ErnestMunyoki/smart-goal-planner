@@ -4,7 +4,7 @@ import Deposit from './Components/DepositForm'
 import GoalsForm from './Components/GoalForm'
 import GoalsList from './Components/GoalList'
 import Overview from './Components/Overview'
-
+import App from './Components/App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,5 +12,6 @@ createRoot(document.getElementById('root')).render(
     <GoalsForm />
     <GoalsList/>
     <Overview />
+    <App/>
   </StrictMode>,
 )
