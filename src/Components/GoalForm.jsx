@@ -3,10 +3,10 @@ import { useState } from "react"
 function GoalsForm(){
 
     const [formData, setFormData] = useState({
-        Name:"",
-        Targetamount:"",
-        Category:"",
-        Deadline:""
+        name:"",
+        targetAmount:"",
+        category:"",
+        deadline:""
     })
 
 function changeAction(e){
@@ -16,24 +16,24 @@ function changeAction(e){
 function submitAction(e){
     e.preventDefault();
     const newGoal = {
-         name: formData.Name,
+        name: formData.name,
         targetAmount: parseFloat(formData.targetAmount),
-        category: formData.Category,
-        deadline: formData.Deadline,
+        category: formData.category,
+        deadline: formData.deadline,
         savedAmount: 0
     };
     onAddGoal(newGoal)
-    setFormData({Name:"", Targetamount:"", Category:"", Deadline:""})
+    setFormData({name:"", targetAmount:"", category:"", deadline:""})
 }
 
     return(
         <div>
             <form onSubmit={submitAction}>
                 <h1>Add New Goal</h1>
-                <input name="name" placeholder="Goal name" value={formData.Name || ""} onChange={changeAction}/>
-                <input name="Targetamount" placeholder="Target Amount" value={formData.Targetamount ||""} onChange={changeAction} />
-                <input name="Category" placeholder="Category" value={formData.Category ||""} onChange={changeAction} />
-                <input name="Deadline" placeholder="Deadline (DD-MM-YYYY)" value={formData.Deadline ||""} onChange={changeAction}/>
+                <input name="name" placeholder="Goal name" value={formData.name || ""} onChange={changeAction}/>
+                <input name="Targetamount" placeholder="Target Amount" value={formData.targetAmount ||""} onChange={changeAction} />
+                <input name="Category" placeholder="Category" value={formData.category ||""} onChange={changeAction} />
+                <input name="Deadline" placeholder="Deadline (DD-MM-YYYY)" value={formData.deadline ||""} onChange={changeAction}/>
                 <button type="Submit">Add Goal</button>
             </form>
         </div>
