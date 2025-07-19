@@ -24,17 +24,7 @@ function App() {
     ));
   }
 
-  return (
-    <div>
-      <h1>Smart Goal Planner</h1>
-      <GoalForm onAddGoal={addGoal} />
-      <Overview goals={goals} />
-      {goals.map(goal => (
-        <DepositForm key={goal.id} goalId={goal.id} onAddDeposit={addDeposit} />
-      ))}
-      <GoalList goals={goals} onDeleteGoal={deleteGoal} />
-    </div>
-  );
+ 
 }
 
 export default App;
