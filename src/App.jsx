@@ -1,4 +1,6 @@
 import { useState } from "react";
+import GoalForm from "./Components/GoalForm";
+import GoalList from "./Components/GoalList";
 
 function App() {
   const [goals, setGoals] = useState([]); 
@@ -14,13 +16,7 @@ function App() {
     setGoals(updatedGoals);
   };
 
-  return (
-    <div>
-      <h1>Smart Goal Planner</h1>
-      <GoalForm onAddGoal={handleAddGoal} />
-      <GoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
-    </div>
-  );
+
 }
 
 export default App;
