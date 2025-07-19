@@ -7,11 +7,11 @@ function GoalList({goals, onDeleteGoal}) {
              ) : (
                 goals.map((goal) => (
                     <div>
-                        <h3>{goal.name}</h3>
+                       <h3>{goal.name}</h3>
                         <p>Target: ${goal.targetAmount}</p>
                         <p>Saved: ${goal.savedAmount}</p>
                         <p>Remaining: ${goal.targetAmount - goal.savedAmount}</p>
-                        <p>Deadline: ${goal.deadline}</p>
+                        <p>Deadline: {goal.deadline}</p>
                         <button onClick={() => onDeleteGoal(goal.id)}>Delete</button>
                     </div>
                 ))
