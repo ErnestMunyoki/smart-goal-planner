@@ -1,8 +1,8 @@
-import GoalForm from "./components/GoalsForm";
+import GoalForm from "./components/GoalForm";
 
 function App() {
   const handleAddGoal = (goal) => {
-    console.log("Adding goal:", goal);
+    console.log("New Goal Submitted:", goal);
   };
 
   return (
@@ -11,3 +11,6 @@ function App() {
     </div>
   );
 }
+
+export default App;
+
