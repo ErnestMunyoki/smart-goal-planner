@@ -16,6 +16,18 @@ function App() {
     setGoals(updatedGoals);
   };
 
+  return (
+    <div>
+      <h1>Smart Goal Planner</h1>
+      <GoalForm onAddGoal={handleAddGoal} />
+      {goals.length > 0 && (
+        <>
+          <GoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
+          <Overview goals={goals} />
+        </>
+      )}
+    </div>
+  );
 }
 
 export default App;
