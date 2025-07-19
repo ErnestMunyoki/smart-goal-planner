@@ -21,6 +21,8 @@ function GoalForm({ onAddGoal }) {
       deadline: formData.deadline,
       savedAmount: 0,
     };
+
+    if (typeof onAddGoal === "function")
     onAddGoal(newGoal);
     setFormData({
       name: "",
