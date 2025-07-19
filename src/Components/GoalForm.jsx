@@ -31,9 +31,9 @@ function submitAction(e){
             <form onSubmit={submitAction}>
                 <h1>Add New Goal</h1>
                 <input name="name" placeholder="Goal name" value={formData.name || ""} onChange={changeAction}/>
-                <input name="Targetamount" placeholder="Target Amount" value={formData.targetAmount ||""} onChange={changeAction} />
-                <input name="Category" placeholder="Category" value={formData.category ||""} onChange={changeAction} />
-                <input name="Deadline" placeholder="Deadline (DD-MM-YYYY)" value={formData.deadline ||""} onChange={changeAction}/>
+                <input name="targetAmount" placeholder="Target Amount" value={formData.targetAmount ||""} onChange={changeAction} />
+                <input name="category" placeholder="Category" value={formData.category ||""} onChange={changeAction} />
+                <input name="deadline" placeholder="Deadline (DD-MM-YYYY)" value={formData.deadline ||""} onChange={changeAction}/>
                 <button type="Submit">Add Goal</button>
             </form>
         </div>
