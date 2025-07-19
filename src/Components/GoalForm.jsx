@@ -26,7 +26,14 @@ function submitAction(e){
 
     return(
         <div>
-            <div><button>Delete</button></div>
+            <form onSubmit={handleSubmit}>
+                <h1>Add New Goal</h1>
+                <input name="name" placeholder="Goal name" value={formData.Name} onChange={changeAction}/>
+                <input name="Targetamount" placeholder="Target Amount" value={formData.Targetamount} onChange={changeAction} />
+                <input name="Category" placeholder="Category" value={formData.Category} onChange={changeAction} />
+                <input name="Deadline" placeholder="Deadline (DD-MM-YYYY)" value={formData.Deadline} onChange={changeAction}/>
+                <button type="Submit">Add Goal</button>
+            </form>
         </div>
     )
 }
