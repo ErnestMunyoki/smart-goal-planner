@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function GoalsForm({onAddGoal}){
+function GoalForm({onAddGoal}){
 
     const [formData, setFormData] = useState({
         name:"",
