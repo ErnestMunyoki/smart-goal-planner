@@ -3,7 +3,6 @@ import { useState } from "react";
 function DepositForm({ goalId, onAddDeposit }) {
   const [amount, setAmount] = useState("");
 
-
   function handleSubmit(e) {
     e.preventDefault();
     const num = parseFloat(amount);
@@ -13,7 +12,6 @@ function DepositForm({ goalId, onAddDeposit }) {
     }
   }
 
-  
   return (
     <form onSubmit={handleSubmit}>
       <input
