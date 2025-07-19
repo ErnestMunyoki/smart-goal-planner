@@ -1,4 +1,4 @@
-function GoalList({goals, onDeleteGoal}) {
+function GoalList({goals = [], onDeleteGoal}) {
     return(
         <div>
              <h2>Your Goals</h2>

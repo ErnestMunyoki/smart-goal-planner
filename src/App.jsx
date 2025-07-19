@@ -1,6 +1,4 @@
 import { useState } from "react";
-import GoalForm from "./components/GoalForm";
-import GoalList from "./components/GoalList";
 
 function App() {
   const [goals, setGoals] = useState([]); 
