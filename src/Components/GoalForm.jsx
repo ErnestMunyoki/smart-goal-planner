@@ -26,7 +26,7 @@ function submitAction(e){
 
     return(
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={submitAction}>
                 <h1>Add New Goal</h1>
                 <input name="name" placeholder="Goal name" value={formData.Name} onChange={changeAction}/>
                 <input name="Targetamount" placeholder="Target Amount" value={formData.Targetamount} onChange={changeAction} />
