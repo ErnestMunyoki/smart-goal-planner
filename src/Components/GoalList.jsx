@@ -6,7 +6,7 @@ function GoalList({goals, onDeleteGoal}) {
                 <p>No goals yet</p>
              ) : (
                 goals.map((goal) => (
-                    <div>
+                    <div key={goal.id}>
                        <h3>{goal.name}</h3>
                         <p>Target: ${goal.targetAmount}</p>
                         <p>Saved: ${goal.savedAmount}</p>
