@@ -40,4 +40,4 @@ function submitAction(e){
     )
 }
 
-export default GoalsForm
+export default GoalForm
