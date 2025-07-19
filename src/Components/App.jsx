@@ -1,4 +1,4 @@
-import GoalsForm from "./components/GoalsForm";
+import GoalForm from "./components/GoalsForm";
 
 function App() {
   const handleAddGoal = (goal) => {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <GoalsForm onAddGoal={handleAddGoal} />
+      <GoalForm onAddGoal={handleAddGoal} />
     </div>
   );
 }
